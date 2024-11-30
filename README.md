@@ -27,13 +27,21 @@ I wanted to explore my Spotify data to better understand my music taste, identif
 - Exploratory Data Analysis (EDA): To clean and understand the data.
 - Visualization: Using Python libraries like Matplotlib and Seaborn to create graphs.
 - Time Series Analysis: To explore trends over hours, days, and months.
+  **Below are examples of the insights gained through visualizations:**
+  - Top Artists and Songs: By listening hours and play counts.
+  - Unique vs. Non-Unique Songs: Pie chart representation.
+  - Day-wise and Hourly Streaming Patterns: Time-based analysis.
+  - Word Clouds: Highlighting favorite songs and artists.
 
 
 
+#### 7. **Results**
+**Key findings from the analysis include:**
 
-
-
-
+- My top 10 favorite artists based on listening time and play counts.
+- Streaming is most active on Sundays and during late afternoon/evening hours.
+- I listen to unique songs about 16.6% of the time, while the remaining 83.4% includes repeated songs(How original!).
+- March stands out as the month with the highest streaming activity.
 
 
 
