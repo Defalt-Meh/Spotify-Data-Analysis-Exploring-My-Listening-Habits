@@ -25,18 +25,6 @@ I wanted to explore my Spotify data to better understand my music taste, identif
   
 **Predictive Model**: A machine learning model to predict why a track was opened based on contextual, behavioral, and song-related features.
 
-**Machine Learning Approach**
-- **Goal**: Predict the reason for track opening (`reason_start`) based on:
-  - Song attributes (e.g., duration, artist?(I hate Beiber)).
-  - Contextual features (e.g., time of day, artist?).
-  - User behavior (e.g., skip history, session activity).
-- **Model**: Implementing a Random Forest classifier (or other more suitable models).
-- **Evaluation**: Assess using accuracy, precision, recall, and confusion matrix.
-- **Features**:
-  - Song-level: `duration`, etc.
-  - User-level: `skip_percentage`, etc.
-  - Context-level: `time_of_day`, `device_type`.
-
 
 ## **Techniques Used**
 - Exploratory Data Analysis (EDA): To clean and understand the data.
@@ -48,6 +36,19 @@ I wanted to explore my Spotify data to better understand my music taste, identif
   - Unique vs. Non-Unique Songs: Pie chart representation.
   - Day-wise and Hourly Streaming Patterns: Time-based analysis.
   - Word Clouds: Highlighting favorite songs and artists.
+ 
+  **Machine Learning Approach**
+- **Goal**: Predict the reason for track opening (`reason_start`) based on:
+  - Song attributes (e.g., duration, artist?(I hate Beiber)).
+  - Contextual features (e.g., time of day, artist?).
+  - User behavior (e.g., skip history, session activity).
+- **Model**: Implementing a Random Forest classifier (or other more suitable models).
+- **Evaluation**: Assess using accuracy, precision, recall, and confusion matrix.
+- **Features**:
+  - Song-level: `duration`, etc.
+  - User-level: `skip_percentage`, etc.
+  - Context-level: `time_of_day`, `device_type`.
+
 
 
 
