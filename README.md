@@ -1,77 +1,120 @@
-# Spotify Data Analysis: Insights into My Listening Habits
-
-## Introduction
-This project delves into my personal Spotify listening habits by analyzing data from playlists and songs I listened to. Through this project, I aim to gain insights into my favorite artists, songs, and listening patterns over time. This analysis combines data visualization and exploration to uncover meaningful trends in my music preferences. Beyond analyzing patterns and trends, this project aims to include a predictive model to determine why a track is opened (e.g., via forward button, track done, or play button) based on contextual, user behavior, and song-related features.
+# Spotify Data Analysis: Predicting Track Opening Behavior
 
 ## Motivation
-I wanted to explore my Spotify data to better understand my music taste, identify listening patterns, find trends across playlists and time. Also, I think predicting track-opening behaviour provides nice insights into my listening habits by understanding my track selection. Also it is very cool. Analyzing personal data like this provides a fun and informative way to combine music and data science.
 
+I started this project to explore my Spotify listening habits and gain a deeper understanding of my music preferences. By analyzing the data, I aim to uncover patterns in my listening behavior, such as favorite artists, songs, and trends over time. Additionally, I aim to take it a step further by building a predictive model to determine why a track is opened (e.g., via forward button, track done, or play button). This predictive aspect combines my love for music and technology with the exciting challenge of data science. Through this project, I hope to gain valuable insights while expanding my technical skillset.
+
+---
 
 ## Data Source
-- The data for this project comes from Spotify's personal data export feature and my manually curated playlists.
-- Includes:
-  - Song listening history (timestamps, song names, artists...).
-  - Playlists with song details.
-- **Note**: The raw data is not included in this repository for privacy reasons.
 
-## Key Features
-- Analysis of top artists and songs by listening hours and play counts.
-- Time-based patterns in music consumption (hourly, daily, monthly).
-- Unique vs. non-unique songs in playlists.
-- Visual representation of insights using:
-  - Bar charts for top artists and songs.
-  - Pie charts for unique vs. non-unique songs.
-  - Word clouds for favorite songs and artists.
-  
-**Predictive Model**: A machine learning model to predict why a track was opened based on contextual, behavioral, and song-related features.
+The data for this project was sourced from Spotify's personal data export feature and my manually curated playlists. The dataset includes:
 
+- **Song listening history**: Timestamps, song names, artists, and more.
+- **Playlists**: Information about songs within each playlist.
 
-## **Techniques Used**
-- Exploratory Data Analysis (EDA): To clean and understand the data.
-- Visualization: Using Python libraries like Matplotlib and Seaborn to create graphs.
-- Time Series Analysis: To explore trends over hours, days, and months.
+### How I plan to collect it:
+- Use Spotify's data export tool to retrieve my personal streaming history.
+- Preprocess and clean the data using Python in Jupyter Notebook to prepare it for analysis and modeling.
 
-  **Below are examples of the insights gained through visualizations:**
-  - Top Artists and Songs: By listening hours and play counts.
-  - Unique vs. Non-Unique Songs: Pie chart representation.
-  - Day-wise and Hourly Streaming Patterns: Time-based analysis.
-  - Word Clouds: Highlighting favorite songs and artists.
- 
-  **Machine Learning Approach**
-- **Goal**: Predict the reason for track opening (`reason_start`) based on:
-  - Song attributes (e.g., duration, artist?(I hate Beiber)).
-  - Contextual features (e.g., time of day, artist?).
-  - User behavior (e.g., skip history, session activity).
-- **Model**: Implementing a Random Forest classifier (or other more suitable models).
-- **Evaluation**: Assess using accuracy, precision, recall, and confusion matrix.
+**Note**: The raw data will not be included in the repository to protect privacy.
+
+---
+
+## Data Analysis
+
+This project will follow several stages of analysis:
+
+### 1. Data Cleaning
+- Handle missing values, standardize column names, and ensure consistency across datasets.
+- Create derived features like `reason_start` (e.g., "trackdone," "fwdbtn") for predictive modeling.
+
+### 2. Exploratory Data Analysis (EDA)
+- Use Python libraries like Pandas, Matplotlib, and Seaborn to visualize and analyze the data.
+- Gain insights into:
+  - Top artists and songs by listening hours and play counts.
+  - Patterns in music consumption across days, hours, and months.
+  - Proportion of unique vs. non-unique songs in playlists.
+
+### 3. Visualization
+- **Bar charts**: Top artists and songs.
+- **Pie charts**: Unique vs. non-unique songs.
+- **Word clouds**: Favorite artists and songs.
+- **Time-based trends**: Hourly, daily, and monthly streaming patterns.
+
+### 4. Predictive Modeling
+- **Goal**: Build a model in Jupyter Notebook to predict the reason a track is opened (`reason_start`) based on contextual, user behavior, and song-related features.
+- **Approach**:
+  - Implement machine learning models like Random Forest directly in the notebook.
+  - Use scikit-learn for model training and evaluation.
+- **Evaluation**:
+  - Assess the model using accuracy, precision, recall, and a confusion matrix.
 - **Features**:
-  - Song-level: `duration`, etc.
-  - User-level: `skip_percentage`, etc.
-  - Context-level: `time_of_day`, `device_type`.
+  - Song-level: `duration`, `artist popularity`, etc.
+  - User-level: `skip_percentage`, historical listening behavior.
+  - Context-level: `time_of_day`, `device_type`, `playlist_type`.
 
+---
 
+## Findings
 
+Through this project, I hope to learn the following about my listening habits:
 
-##  **Results**
-**Key findings from the analysis include:**
+- **Top Artists and Songs**:
+  - Identify my top artists and songs by listening time and play counts.
+  - Understand how my preferences vary by genre or mood.
+- **Streaming Patterns**:
+  - Explore which days and times I’m most active.
+  - Highlight specific months or seasons when I stream more frequently.
+- **Repetition**:
+  - Calculate how often I revisit songs and playlists.
+- **Prediction**:
+  - Use the predictive model to identify key factors driving track-opening behavior.
 
-- My top 10 favorite artists based on listening time and play counts.
-- Streaming is most active on Sundays and during late afternoon/evening hours.
-- I listen to unique songs about 16.6% of the time, while the remaining 83.4% includes repeated songs(How original!).
-- March stands out as the month with the highest streaming activity.
+---
 
+## Limitations and Future Work
 
+### Limitations (Expected):
+1. **Data Diversity**:
+   - The dataset will reflect only my personal listening habits, limiting generalizability.
+2. **Class Imbalance**:
+   - Some `reason_start` categories (e.g., "trackdone") might dominate, which could affect prediction accuracy for less frequent reasons.
+3. **Feature Limitations**:
+   - External factors like mood, activity type, or social influences are not included in the dataset.
 
+### Future Work:
+1. **Feature Engineering**:
+   - Plan to incorporate additional features like genre, mood, or sentiment analysis of lyrics to enrich the data.
+2. **Advanced Modeling**:
+   - Experiment with deep learning models or ensemble techniques (if allowed) in Jupyter Notebook.
+3. **Broader Analysis**:
+   - Compare my listening habits with global Spotify trends or data from other users.
+4. **Real-Time Application**:
+   - Aim to deploy the predictive model in a real-time environment for dynamic predictions.
+5. **Additional Predictions**:
+   - Extend the project to predict skip likelihood, playlist preferences, or favorite genres.
 
+---
 
+## How to Run
 
+To explore or replicate the analysis and prediction model:
 
+1. Clone this repository to your local machine.
+2. Open the Jupyter Notebook file (`Spotify_Data_Analysis.ipynb`) in your Jupyter environment.
+3. Ensure you have Python and the following libraries installed:
+   - Pandas
+   - Matplotlib
+   - Seaborn
+   - Scikit-learn
+4. Run the notebook cells step by step to:
+   - Analyze and visualize the data.
+   - Train and evaluate the predictive model.
 
+---
 
+## Acknowledgments
 
-
-
-
-
-
-
+- **Spotify**: For providing the data export feature.
+- **Python Libraries**: Matplotlib, Seaborn, Pandas, and Scikit-learn for enabling analysis and modeling.
