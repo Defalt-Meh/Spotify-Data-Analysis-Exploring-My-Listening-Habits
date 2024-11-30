@@ -1,4 +1,4 @@
-# Spotify Data Analysis: Predicting Track Opening Behavior
+# Spotify Data Analysis: Exploring My Listening Habits
 
 ## Motivation
 
