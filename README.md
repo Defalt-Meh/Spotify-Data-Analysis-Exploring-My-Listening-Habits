@@ -12,6 +12,7 @@ The data for this project was sourced from Spotify's personal data export featur
 
 - **Song listening history**: Timestamps, song names, artists, and more.
 - **Playlists**: Information about songs within each playlist.
+- **Includes data between 2019 and 2024.**
   
 **Note**: The raw data will not be included in the repository to protect privacy.
 
