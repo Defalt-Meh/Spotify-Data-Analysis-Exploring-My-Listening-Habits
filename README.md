@@ -79,15 +79,11 @@ Through this project, I hope to learn the following about my listening habits:
    - External factors like mood, activity type, or social influences are not included in the dataset(Apple did not send me my data :/).
 
 ### Future Work:
-1. **Feature Engineering**:
-   - Plan to incorporate additional features like genre, mood, or sentiment analysis of lyrics to enrich the data.
-2. **Advanced Modeling**:
+1. **Advanced Modeling**:
    - Experiment with deep learning models or ensemble techniques (if allowed) in Jupyter Notebook.
-3. **Broader Analysis**:
+2. **Broader Analysis**:
    - Compare my listening habits with global Spotify trends or data from other users.
-4. **Real-Time Application**:
-   - Aim to deploy the predictive model in a real-time environment for dynamic predictions.
-5. **Additional Predictions**:
+3. **Additional Predictions**:
    - Extend the project to predict skip likelihood, playlist preferences, or favorite genres.
 
 ---
