@@ -36,7 +36,7 @@ I wanted to explore my Spotify data to better understand my music taste, identif
 
 
 
-#### 7. **Results**
+##  **Results**
 **Key findings from the analysis include:**
 
 - My top 10 favorite artists based on listening time and play counts.
