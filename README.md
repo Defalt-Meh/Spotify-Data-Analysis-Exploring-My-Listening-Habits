@@ -1,10 +1,11 @@
 # Spotify Data Analysis: Insights into My Listening Habits
 
 ## Introduction
-This project delves into my personal Spotify listening habits by analyzing data from playlists and songs I listened to. Through this project, I aim to gain insights into my favorite artists, songs, and listening patterns over time. This analysis combines data visualization and exploration to uncover meaningful trends in my music preferences.
+This project delves into my personal Spotify listening habits by analyzing data from playlists and songs I listened to. Through this project, I aim to gain insights into my favorite artists, songs, and listening patterns over time. This analysis combines data visualization and exploration to uncover meaningful trends in my music preferences. Beyond analyzing patterns and trends, this project aims to include a predictive model to determine why a track is opened (e.g., via forward button, track done, or play button) based on contextual, user behavior, and song-related features.
 
 ## Motivation
-I wanted to explore my Spotify data to better understand my music taste, identify listening patterns, and find trends across playlists and time. Analyzing personal data like this provides a fun and informative way to combine music and data science.
+I wanted to explore my Spotify data to better understand my music taste, identify listening patterns, find trends across playlists and time. Also, I think predicting track-opening behaviour provides nice insights into my listening habits by understanding my track selection. Also it is very cool. Analyzing personal data like this provides a fun and informative way to combine music and data science.
+
 
 ## Data Source
 - The data for this project comes from Spotify's personal data export feature and my manually curated playlists.
@@ -21,6 +22,21 @@ I wanted to explore my Spotify data to better understand my music taste, identif
   - Bar charts for top artists and songs.
   - Pie charts for unique vs. non-unique songs.
   - Word clouds for favorite songs and artists.
+  
+**Predictive Model**: A machine learning model to predict why a track was opened based on contextual, behavioral, and song-related features.
+
+## Machine Learning Approach
+- **Goal**: Predict the reason for track opening (`reason_start`) based on:
+  - Song attributes (e.g., duration, artist?(I hate Beiber)).
+  - Contextual features (e.g., time of day, artist?).
+  - User behavior (e.g., skip history, session activity).
+- **Model**: Implementing a Random Forest classifier (or other more suitable models).
+- **Evaluation**: Assess using accuracy, precision, recall, and confusion matrix.
+- **Features**:
+  - Song-level: `duration`, etc.
+  - User-level: `skip_percentage`, etc.
+  - Context-level: `time_of_day`, `device_type`.
+
 
 ## **Techniques Used**
 - Exploratory Data Analysis (EDA): To clean and understand the data.
