@@ -24,9 +24,9 @@ I wanted to explore my Spotify data to better understand my music taste, identif
   ```
 
 ## **Techniques Used**
--Exploratory Data Analysis (EDA): To clean and understand the data.
--Visualization: Using Python libraries like Matplotlib and Seaborn to create graphs.
--Time Series Analysis: To explore trends over hours, days, and months.
+- Exploratory Data Analysis (EDA): To clean and understand the data.
+- Visualization: Using Python libraries like Matplotlib and Seaborn to create graphs.
+- Time Series Analysis: To explore trends over hours, days, and months.
 
 
 
