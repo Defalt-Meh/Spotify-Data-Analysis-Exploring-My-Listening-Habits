@@ -27,6 +27,7 @@ I wanted to explore my Spotify data to better understand my music taste, identif
 - Exploratory Data Analysis (EDA): To clean and understand the data.
 - Visualization: Using Python libraries like Matplotlib and Seaborn to create graphs.
 - Time Series Analysis: To explore trends over hours, days, and months.
+
   **Below are examples of the insights gained through visualizations:**
   - Top Artists and Songs: By listening hours and play counts.
   - Unique vs. Non-Unique Songs: Pie chart representation.
