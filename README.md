@@ -25,7 +25,7 @@ I wanted to explore my Spotify data to better understand my music taste, identif
   
 **Predictive Model**: A machine learning model to predict why a track was opened based on contextual, behavioral, and song-related features.
 
-## Machine Learning Approach
+**Machine Learning Approach**
 - **Goal**: Predict the reason for track opening (`reason_start`) based on:
   - Song attributes (e.g., duration, artist?(I hate Beiber)).
   - Contextual features (e.g., time of day, artist?).
