@@ -23,7 +23,7 @@ I wanted to explore my Spotify data to better understand my music taste, identif
   - Word clouds for favorite songs and artists.
   ```
 
-**Techniques Used**
+## **Techniques Used**
 -Exploratory Data Analysis (EDA): To clean and understand the data.
 -Visualization: Using Python libraries like Matplotlib and Seaborn to create graphs.
 -Time Series Analysis: To explore trends over hours, days, and months.
