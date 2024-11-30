@@ -21,7 +21,6 @@ I wanted to explore my Spotify data to better understand my music taste, identif
   - Bar charts for top artists and songs.
   - Pie charts for unique vs. non-unique songs.
   - Word clouds for favorite songs and artists.
-  ```
 
 ## **Techniques Used**
 - Exploratory Data Analysis (EDA): To clean and understand the data.
