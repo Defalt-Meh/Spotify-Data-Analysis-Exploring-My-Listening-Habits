@@ -2,9 +2,9 @@
 
 ## Motivation
 
-In the grim darkness of the far future, there is only data. I embarked on this holy crusade of analysis to uncover the sacred patterns within my Spotify listening habits. What artists dominate my auditory battlefields? What songs carry me through the trenches of daily life? And, most importantly, can a machine be taught to predict whether a song will be skipped—like an unworthy heretic—based on its traits? 
+In the grim darkness of the far future, there is only data. I embarked on this holy crusade of analysis to uncover the sacred patterns within my Spotify listening habits. What artists dominate my auditory battlefields? What songs carry me through the trenches of daily life? And, most importantly, can a machine be taught to predict whether a song will be skipped—like an unworthy student—based on its traits? 
 
-By undertaking this glorious quest, I wield the weapons of data science and machine learning to forge a deeper understanding of my music consumption. Is this a mere mortal's attempt to understand the Omnissiah's playlist? Nay, it is the union of flesh, steel, and streaming technology to expand my technical skillset and have a jolly good laugh along the way.
+By undertaking this glorious quest, I wield the weapons of data science and machine learning to forge a deeper understanding of my music consumption. Is this a mere mortal's attempt to understand the Omnissiah's playlist? Nay, it is the union of flesh, steel, and streaming technology to expand my technical skillset and have a good all time along the way.
 
 ---
 
@@ -13,10 +13,10 @@ By undertaking this glorious quest, I wield the weapons of data science and mach
 This project’s data was extracted from the vaults of Spotify using the sanctified export feature, combined with my curated playlists of righteous auditory glory. The dataset includes:
 
 - **Song listening history**: Chronicles of every track that has blessed my ears.
-- **Playlists**: Detailed tomes of songs from my sacred playlists.
-- **Timeframe**: Spanning the years of 2019 to 2024, this is my holy scripture of sound.
+- **Playlists**: Detailed tomes of songs from my not so sacred playlists.
+- **Timeframe**: Spanning the years of 2019 to 2024, this is my holy scripture of sound. Time that I lost my golden prime...
 
-**Note**: The raw data has been locked away in the Forbidden Archive to protect my identity from data-daemons.
+**Note**: The raw data has been locked away in the Forbidden Archive to protect my identity from data-daemons.(.gitignore)
 
 ---
 
@@ -38,7 +38,7 @@ Behold the stages of this glorious undertaking:
 - **Bar charts**: A pictorial tribute to my top artists and songs.
 - **Pie charts**: Slices of data showing unique vs. non-unique tracks in my musical dominion.
 - **Word clouds**: Textual nebulae of my favorite artists and songs.
-- **Time-based trends**: Hourly, daily, and monthly streaming patterns laid bare for worship.
+- **Time-based trends**: Hourly, daily, and monthly streaming patterns laid bare for magistrate.
 
 ### 4. Predictive Modeling
 - **Goal**: To craft a machine learning model in Jupyter Notebook, a shrine of computation, to predict why a track was opened (`reason_start`). Is it divine intervention, or mortal folly?
@@ -60,14 +60,14 @@ From the ashes of raw data rise these truths:
 
 - **Top Artists and Songs**:
   - My most revered artists and tracks, crowned by listening time and play counts.
-  - The genres and moods that align with my soul on the battlefield of life.
+  - The genres and moods that align with my soul on the lost war, which is life.
 - **Streaming Patterns**:
   - Days and hours when I am most active, showing the tactical deployment of sound.
   - Seasons of heightened streaming—perhaps when inspiration or despair takes hold.
 - **Repetition**:
-  - How often I repeat songs like an Ecclesiarch chanting hymns (spoiler: a lot).
+  - How often I repeat songs like an Ecclesiarch chanting hymns (spoiler: a lot(pls don't judge me)).
 - **Prediction**:
-  - Insights from the predictive model about what drives my listening behavior—akin to discovering the motives of a Chaos cultist.
+  - Insights from the predictive model about what drives my listening behavior—akin to discovering the motives of a procastinating scholar.
 
 ---
 
@@ -75,7 +75,7 @@ From the ashes of raw data rise these truths:
 
 ### Limitations (Expected):
 1. **Data Diversity**:
-   - This dataset reflects only my listening habits. Generalizing it to others would be heresy.
+   - This dataset reflects only my listening habits. Generalizing it to others would be heresy(just kidding). Could implement a broader dataset. My computers processor was not taking it, also, it is hard.
 2. **Class Imbalance**:
    - Some `reason_start` categories may dominate like a Hive Tyrant, skewing predictions for less common reasons.
 3. **Feature Limitations**:
@@ -83,7 +83,7 @@ From the ashes of raw data rise these truths:
 
 ### Future Work:
 1. **Advanced Modeling**:
-   - Experiment with deep learning models or ensemble techniques, provided the Omnissiah approves.
+   - Experiment with deep learning models or ensemble techniques, provided the GPU approves.
 2. **Broader Analysis**:
    - Compare my personal habits to the collective trends of the Imperium of Spotify users.
 3. **Additional Predictions**:
@@ -114,7 +114,7 @@ To embark on this glorious analysis:
 
 The Machine Spirit has blessed this project with a Gradio interface for real-time predictions. Here, users may input a song name to determine whether it is likely to be skipped. Behold the interface below:
 
-![Gradio Interface Screenshot](gradio_interface.png)
+![Gradio Interface Screenshot](img/gradio_interface.png)
 
 ---
 
