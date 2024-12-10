@@ -116,6 +116,8 @@ The Machine Spirit has blessed this project with a Gradio interface for real-tim
 
 ![Gradio Interface Screenshot](img/gradio_interface.png)
 
+I failed the vibe check :/
+
 ---
 
 ## Acknowledgments
