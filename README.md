@@ -85,7 +85,7 @@ From the ashes of raw data rise these truths:
 1. **Advanced Modeling**:
    - Experiment with deep learning models or ensemble techniques, provided the GPU approves.
 2. **Broader Analysis**:
-   - Compare my personal habits to the collective trends of the Imperium of Spotify users.
+   - Compare my personal habits to the collective trends of the Imperium of Spotify users. Maybe implement a sentiment analysis for lyrics to better understand my skipping patterns.
 3. **Additional Predictions**:
    - Extend the machine’s reach to predict skip likelihood, playlist preferences, or favorite genres—useful for commanding playlists of maximum efficiency.
 
