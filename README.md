@@ -2,7 +2,7 @@
 
 ## Motivation
 
-In the grim darkness of the far future, there is only data. I embarked on this holy crusade of analysis to uncover the sacred patterns within my Spotify listening habits. What artists dominate my auditory battlefields? What songs carry me through the trenches of daily life? And, most importantly, can a machine be taught to predict whether a song will be skipped—like an unworthy student—based on its traits? 
+In the grim darkness of the far future, there is only data. I embarked on this holy crusade of analysis to uncover the sacred patterns within my Spotify listening habits, to satiate the desires of the Instructors of DSA 210. What artists dominate my auditory battlefields? What songs carry me through the trenches of daily life? And, most importantly, can a machine be taught to predict whether a song will be skipped—like an unworthy student—based on its traits? We shall try to answer these question in my term project!
 
 By undertaking this glorious quest, I wield the weapons of data science and machine learning to forge a deeper understanding of my music consumption. Is this a mere mortal's attempt to understand the Omnissiah's playlist? Nay, it is the union of flesh, steel, and streaming technology to expand my technical skillset and have a good all time along the way.
 
