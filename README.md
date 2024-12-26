@@ -1,5 +1,9 @@
 # Spotify Data Analysis: Exploring My Listening Habits
 
+Sabancı University DSA210 Introduction to Data Science Course Fall 2024-2025 Term Project. 
+
+---
+
 ## Motivation
 
 In the grim darkness of the far future, there is only data. I embarked on this holy crusade of analysis to uncover the sacred patterns within my Spotify listening habits, to satiate the desires of the Instructors of DSA 210. What artists dominate my auditory battlefields? What songs carry me through the trenches of daily life? And, most importantly, can a machine be taught to predict whether a song will be skipped—like an unworthy student—based on its traits? We shall try to answer these question in my term project!
