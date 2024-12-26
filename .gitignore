@@ -1,2 +1,12 @@
 # Ignore all Streaming_History_Audio JSON files 
 Streaming_History_Audio_*.json
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+
+# Ignoring virtualenv
+venv/
+.env/
