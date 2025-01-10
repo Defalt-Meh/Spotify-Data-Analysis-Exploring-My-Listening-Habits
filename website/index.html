@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spotify Data Analysis: Exploring My Listening Habits</title>
+  <!-- Link to the external CSS file -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Optional: Add a Google Font for a modern look -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" 
+    rel="stylesheet"
+  />
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Spotify Analysis</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#motivation">Motivation</a></li>
+        <li><a href="#data-source">Data Source</a></li>
+        <li><a href="#analysis">Analysis</a></li>
+        <li><a href="#findings">Findings</a></li>
+        <li><a href="#limitations">Future Work</a></li>
+        <li><a href="#how-to-run">How to Run</a></li>
+        <li><a href="#acknowledgments">Acknowledgments</a></li>
+        <li><a href="#references">References</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Spotify Data Analysis: Exploring My Listening Habits</h1>
+      <p>Sabancı University DSA210 Introduction to Data Science (Fall 2024-2025)</p>
+      <a href="#motivation" class="btn-cta">Get Started</a>
+    </div>
+  </section>
+
+  <!-- Motivation Section -->
+  <section id="motivation" class="section">
+    <div class="container">
+      <h2>Motivation</h2>
+      <p>
+        In the grim darkness of the far future, there is only data. I embarked on this 
+        holy crusade of analysis to uncover the sacred patterns within my Spotify 
+        listening habits, to satiate the desires of the Instructors of DSA 210. What 
+        artists dominate my auditory battlefields? What songs carry me through the 
+        trenches of daily life? And, most importantly, can a machine be taught to 
+        predict whether a song will be skipped—like an unworthy student—based on its 
+        traits? We shall try to answer these questions in my term project!
+      </p>
+      <p>
+        By undertaking this glorious quest, I wield the weapons of data science and 
+        machine learning to forge a deeper understanding of my music consumption. Is 
+        this a mere mortal's attempt to understand the Omnissiah's playlist? Nay, it is 
+        the union of flesh, steel, and streaming technology to expand my technical 
+        skillset and have a good time along the way.
+      </p>
+    </div>
+  </section>
+
+  <!-- Data Source Section -->
+  <section id="data-source" class="section alt-background">
+    <div class="container">
+      <h2>Data Source</h2>
+      <p>
+        This project’s data was extracted from the vaults of Spotify using the sanctified 
+        export feature, combined with my curated playlists of righteous auditory glory. The 
+        dataset includes:
+      </p>
+      <ul>
+        <li><strong>Song listening history:</strong> Chronicles of every track that has blessed my ears.</li>
+        <li><strong>Playlists:</strong> Detailed tomes of songs from my not-so-sacred playlists.</li>
+        <li><strong>Timeframe:</strong> Spanning the years of 2019 to 2024, this is my holy scripture of sound.</li>
+      </ul>
+      <p>
+        <em>Note:</em> The raw data has been locked away in the Forbidden Archive to protect my 
+        identity from data-daemons (<code>.gitignore</code>).
+      </p>
+    </div>
+  </section>
+
+  <!-- Data Analysis Section -->
+  <section id="analysis" class="section">
+    <div class="container">
+      <h2>Data Analysis</h2>
+      <p>
+        Behold the stages of this glorious undertaking:
+      </p>
+
+      <h3>1. Data Cleaning</h3>
+      <p>
+        Cleansing the dataset of impurities, purging null values, and standardizing column 
+        names for consistency—truly, a Mechanicum-worthy endeavor.
+      </p>
+
+      <h3>2. Exploratory Data Analysis (EDA)</h3>
+      <ul>
+        <li>
+          Deploying powerful Python libraries—Pandas, Matplotlib, and Seaborn—like servo-skulls 
+          to visualize and analyze my sacred data.
+        </li>
+        <li>
+          Unearthing holy truths such as:
+          <ul>
+            <li>The songs and artists I have pledged my allegiance to, sorted by listening hours and play counts.</li>
+            <li>Battle patterns in music consumption across the days, hours, and months.</li>
+            <li>
+              The ratio of unique to non-unique songs in my playlists, to determine if I’m a 
+              heretic who repeats songs too much.
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3>3. Visualization</h3>
+      <ul>
+        <li>Bar charts: A pictorial tribute to my top artists and songs.</li>
+        <li>Pie charts: Slices of data showing unique vs. non-unique tracks in my musical dominion.</li>
+        <li>Word clouds: Textual nebulae of my favorite artists and songs.</li>
+        <li>Time-based trends: Hourly, daily, and monthly streaming patterns laid bare for the magistrate.</li>
+      </ul>
+
+      <h3>4. Predictive Modeling</h3>
+      <p>
+        <strong>Goal:</strong> To craft a machine learning model in Jupyter Notebook, a shrine 
+        of computation, to predict why a track was opened (<code>reason_start</code>). Is it 
+        divine intervention, or mortal folly?
+      </p>
+      <p>
+        <strong>Approach:</strong>
+      </p>
+      <ul>
+        <li>
+          Deploying Random Forest (or better models if the Machine Spirit demands it).
+        </li>
+        <li>
+          Utilizing scikit-learn as the sacred cogitator for training and evaluation.
+        </li>
+      </ul>
+      <p>
+        <strong>Evaluation:</strong> Judging the machine’s worthiness with metrics like accuracy, 
+        precision, recall, and confusion matrices—tools of the data inquisition.
+      </p>
+      <p>
+        <strong>Features:</strong>
+      </p>
+      <ul>
+        <li><strong>Song-level:</strong> Traits of the track, such as duration and artist.</li>
+        <li><strong>User-level:</strong> Behavioral patterns like skipping frequency.</li>
+        <li><strong>Context-level:</strong> The time of day and the device used—factors that influence the mind of the listener.</li>
+      </ul>
+
+      <!-- Example Graph Containers: Replace src with your actual graph paths -->
+      <div class="graph-container">
+        <h3>Example Graph: Top Artists</h3>
+        <img src="images/top_artists.png" alt="Top Artists Graph" />
+        <p>A demonstration of my devotion to certain artists.</p>
+      </div>
+
+      <div class="graph-container">
+        <h3>Example Graph: Listening Habits Over Time</h3>
+        <img src="images/listening_over_time.png" alt="Listening Over Time Graph" />
+        <p>Battle patterns in daily and monthly streaming activity.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Findings Section -->
+  <section id="findings" class="section alt-background">
+    <div class="container">
+      <h2>Findings</h2>
+      <p>
+        From the ashes of raw data rise these truths:
+      </p>
+      <ul>
+        <li>
+          <strong>Top Artists and Songs:</strong> My most revered artists and tracks, crowned 
+          by listening time and play counts. The genres and moods that align with my soul on 
+          the lost war, which is life.
+        </li>
+        <li>
+          <strong>Streaming Patterns:</strong> Days and hours when I am most active, showing the 
+          tactical deployment of sound. Seasons of heightened streaming—perhaps when inspiration 
+          or despair takes hold.
+        </li>
+        <li>
+          <strong>Repetition:</strong> How often I repeat songs like an Ecclesiarch chanting 
+          hymns (spoiler: a lot—pls don't judge me).
+        </li>
+        <li>
+          <strong>Prediction:</strong> Insights from the predictive model about what drives my 
+          listening behavior—akin to discovering the motives of a procrastinating scholar.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Limitations & Future Work Section -->
+  <section id="limitations" class="section">
+    <div class="container">
+      <h2>Limitations &amp; Future Work</h2>
+      <p><strong>Limitations (Expected):</strong></p>
+      <ul>
+        <li>
+          <strong>Data Diversity:</strong> This dataset reflects only my listening habits. 
+          Generalizing it to others would be heresy (just kidding). Could implement a broader 
+          dataset if the data pipelines allow.
+        </li>
+        <li>
+          <strong>Class Imbalance:</strong> Some <code>reason_start</code> categories may dominate 
+          like a Hive Tyrant, skewing predictions for less common reasons.
+        </li>
+        <li>
+          <strong>Feature Limitations:</strong> External factors like mood or social context are 
+          not included. Alas, not even the Machine Spirit can read my mind (yet).
+        </li>
+      </ul>
+      <p><strong>Future Work:</strong></p>
+      <ul>
+        <li>
+          <strong>Advanced Modeling:</strong> Experiment with deep learning models or ensemble 
+          techniques, provided the GPU approves.
+        </li>
+        <li>
+          <strong>Broader Analysis:</strong> Compare my personal habits to the collective trends 
+          of the Imperium of Spotify users. Perhaps implement a sentiment analysis for lyrics 
+          to better understand skipping patterns.
+        </li>
+        <li>
+          <strong>Additional Predictions:</strong> Extend the machine’s reach to predict skip 
+          likelihood, playlist preferences, or favorite genres—useful for commanding playlists 
+          of maximum efficiency.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- How to Run Section -->
+  <section id="how-to-run" class="section alt-background">
+    <div class="container">
+      <h2>How to Run</h2>
+      <p>
+        To embark on this glorious analysis:
+      </p>
+      <ol>
+        <li>Clone this repository from the datasphere to your local cogitator.</li>
+        <li>Open the Jupyter Notebook file <code>Spotify_Data_Analysis.ipynb</code> in your sacred Jupyter environment.</li>
+        <li>
+          Ensure you have Python and the following machine-empowering libraries installed:
+          <ul>
+            <li>Pandas</li>
+            <li>Matplotlib</li>
+            <li>Seaborn</li>
+            <li>Scikit-learn</li>
+            <li>Gradio</li>
+          </ul>
+        </li>
+        <li>
+          Execute the cells one by one to:
+          <ul>
+            <li>Analyze and visualize the data.</li>
+            <li>Train the predictive model.</li>
+            <li>
+              Activate the Gradio interface to summon predictions from the Machine Spirit 
+              via a web-based shrine.
+            </li>
+          </ul>
+        </li>
+      </ol>
+
+      <h3>Gradio Interface</h3>
+      <p>
+        The Machine Spirit has blessed this project with a Gradio interface for real-time 
+        predictions. Here, users may input a song name to determine whether it is likely 
+        to be skipped. Behold the interface below:
+      </p>
+      <div class="graph-container">
+        <!-- Example Placeholder: Replace with your screenshot -->
+        <img src="images/gradio_interface.png" alt="Gradio Interface Screenshot" />
+        <p>Gradio Interface Screenshot</p>
+      </div>
+      <p><em>I failed the vibe check :/</em></p>
+    </div>
+  </section>
+
+  <!-- Acknowledgments Section -->
+  <section id="acknowledgments" class="section">
+    <div class="container">
+      <h2>Acknowledgments</h2>
+      <ul>
+        <li>
+          <strong>Spotify:</strong> For granting access to the holy relics of my listening data.
+        </li>
+        <li>
+          <strong>Python Libraries:</strong> For their role as servo-skulls in aiding analysis 
+          and modeling.
+        </li>
+        <li>
+          <strong>The Machine Spirit:</strong> For enabling this divine union of music and technology.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- References Section -->
+  <section id="references" class="section alt-background">
+    <div class="container">
+      <h2>References</h2>
+      <ul>
+        <li>
+          <a 
+            href="https://github.com/Defalt-Meh/Spotify-Data-Analysis-Exploring-My-Listening-Habits.git" 
+            target="_blank"
+          >
+            GitHub Repository: Spotify Data Analysis - Exploring My Listening Habits
+          </a>
+        </li>
+        <li>Course: Sabancı University DSA210 Introduction to Data Science (Fall 2024-2025)</li>
+        <li>Python and related libraries documentation.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>
+      &copy; 2025 Spotify Data Analysis Project - DSA210 Term Project. All rights reserved.
+    </p>
+  </footer>
+
+  <!-- Optional: Smooth Scroll (Vanilla JS) -->
+  <script>
+    const navLinks = document.querySelectorAll('.nav-links a');
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = link.getAttribute('href');
+        document.querySelector(targetId).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>

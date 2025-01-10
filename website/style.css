@@ -1,0 +1,203 @@
+/* Google Font (Poppins) is used in the HTML. Adjust if needed. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Navigation Bar */
+  header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(24, 24, 24, 0.9); /* Slightly transparent for a modern look */
+    z-index: 999;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    max-width: 1350px;
+    margin: 0 auto;
+  }
+  
+  .logo {
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 1rem;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 400;
+    transition: color 0.3s ease;
+    position: relative;
+  }
+  
+  /* Hover effect on nav links */
+  .nav-links li a::after {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #1DB954; /* Spotify green */
+    transition: width 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    color: #1DB954;
+  }
+  
+  .nav-links li a:hover::after {
+    width: 100%;
+  }
+  
+  /* Hero Section */
+  .hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4') 
+      no-repeat center center/cover; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 64px; /* Adjust for fixed header */
+    overflow: hidden; /* Ensures overlay stays on top */
+  }
+  
+  /* Gradient overlay to improve text readability */
+  .hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    );
+    z-index: 1;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 2; /* Above the overlay */
+    padding: 0 10%;
+    color: #ffffff;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+  }
+  
+  .btn-cta {
+    background-color: #1DB954;
+    color: #ffffff;
+    padding: 0.75rem 2rem;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-cta:hover {
+    background-color: #159c44;
+    transform: translateY(-2px);
+  }
+  
+  /* Section Common Styles */
+  .section {
+    padding: 4rem 10%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    position: relative;
+    color: #121212;
+  }
+  
+  /* Decorative underline for section headers */
+  .section h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #1DB954;
+    margin-top: 8px;
+    border-radius: 2px;
+  }
+  
+  .section p,
+  .section ul,
+  .section ol {
+    line-height: 1.7;
+    margin-bottom: 1rem;
+    color: #333333;
+  }
+  
+  .section ul,
+  .section ol {
+    padding-left: 1.5rem;
+  }
+  
+  /* Alternate background for visual separation */
+  .alt-background {
+    background: #f9f9f9;
+  }
+  
+  /* Container for content centering */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.07);
+  }
+  
+  /* Graph Container */
+  .graph-container {
+    margin: 2rem 0;
+    text-align: center;
+  }
+  
+  .graph-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Footer */
+  footer {
+    background: #181818;
+    padding: 1.5rem 0;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+  }
+  
